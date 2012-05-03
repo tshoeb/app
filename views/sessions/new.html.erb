@@ -1,0 +1,10 @@
+<%= form_for(:session, :url => sessions_path) do |f| %>
+<%= f.label :username %>
+<%= f.text_field :username %>
+<p></p>
+<%= f.label :password %>
+<%= f.text_field :password %>
+<p></p>
+<%= f.submit "Sign in", :class => "btn btn-large btn-primary" %>
+
+<% end %>

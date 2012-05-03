@@ -1,0 +1,18 @@
+<%= form_for(@host) do |f| %>
+    	<%= f.label :first_name %>
+        <%= f.text_field :first_name %>
+        <p></p>
+        <%= f.label :last_name %>
+        <%= f.text_field :last_name %>
+        <p></p>
+        <%= f.label :email%>
+        <%= f.text_field :email %>
+        <p></p>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+        <p></p>
+        <%= f.label :password %>
+        <%= f.text_field :password %>
+		<p></p>
+		<%= f.submit "Create my account", :class => "btn btn-large btn-primary" %>
+<% end %>

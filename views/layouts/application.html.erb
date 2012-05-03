@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PartyManager</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+  <div class="header"><!-- end .header -->
+    <div align="center">Party Manager</div>
+  </div>
+  <p><br></p>
+  <p></p>
+  <p></p>
+  <div class="content">
+	<%= yield %>
+    <!-- end .content --></div>
+	<p></p>
+	<p></p>
+	<p></p>
+ <%= render 'partials/footer' %>
+  <!-- end .container --></div>
+
+</body>
+</html>
